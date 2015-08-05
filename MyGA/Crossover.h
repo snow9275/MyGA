@@ -1,4 +1,4 @@
-//
+﻿//
 //  Crossover.h
 //  MyGA
 //
@@ -9,6 +9,7 @@
 #ifndef __MyGA__Crossover__
 #define __MyGA__Crossover__
 
+#pragma warning(disable : 4996) 
 #include <vector>
 #include <boost/random.hpp>
 #include <ctime>
@@ -16,6 +17,6 @@
 class Crossover{
 public:
     Crossover();
-    void cross(std::vector<int>& selectedGeneIndex, std::vector<std::vector<int>>& geneList, const int geneLength);
+    void cross(std::vector<std::vector<int>>& selectedGenes, const int geneLength);
 };
 #endif /* defined(__MyGA__Crossover__) */

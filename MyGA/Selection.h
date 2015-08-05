@@ -1,4 +1,4 @@
-//
+﻿//
 //  Selection.h
 //  MyGA
 //
@@ -9,13 +9,14 @@
 #ifndef __MyGA__Selection__
 #define __MyGA__Selection__
 
+#pragma warning(disable : 4996) 
 #include <vector>
 #include <boost/random.hpp>
 #include <ctime>
 
 class Selection{
 public:
-    void select(std::vector<int>& evaluateList, std::vector<int>& selectedGeneIndex);
+    void select(std::vector<int>& evaluateList, std::vector<std::vector<int>>& genesList, std::vector<std::vector<int>>& selectedGenes);
     
 };
 

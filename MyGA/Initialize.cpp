@@ -1,4 +1,4 @@
-
+﻿
 
 //
 //  Initialize.cpp
@@ -11,7 +11,7 @@
 #include "Initialize.h"
 
 Initialize::Initialize(const int geneLength){
-    const int numberOfIndividuals = 5;
+    const int numberOfIndividuals = 40		;
     boost::random::mt19937 val(static_cast<unsigned int>(time(0)) );
     boost::random::uniform_int_distribution<> valRange(1,4);
     boost::random::variate_generator<boost::random::mt19937, boost::random::uniform_int_distribution<> > valRandom(val, valRange);

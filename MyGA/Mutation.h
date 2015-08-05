@@ -1,4 +1,4 @@
-//
+﻿//
 //  Mutation.h
 //  MyGA
 //
@@ -8,7 +8,16 @@
 
 #ifndef __MyGA__Mutation__
 #define __MyGA__Mutation__
+#pragma warning(disable : 4996) 
 
 #include <stdio.h>
+#include <vector>
+#include <boost/random.hpp>
+#include <ctime>
+class Mutation {
+public:
+	Mutation();
+	void mutate(std::vector<std::vector<int>>& selectedGenes);
 
+};
 #endif /* defined(__MyGA__Mutation__) */

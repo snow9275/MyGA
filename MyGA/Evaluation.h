@@ -1,4 +1,4 @@
-//
+﻿//
 //  Evaluation.h
 //  MyGA
 //
@@ -14,6 +14,11 @@
 class Evaluation{
 public:
     Evaluation();
+	Evaluation(const int row, const int column);
     void evaluate(const int (&labyrinth)[5][5], std::vector<std::vector<int>>& geneList, std::vector<int>& evaluateList, int column, int row);
+	void printLabyrinthOfIndex(int index, const int(&labyrinth)[5][5], std::vector<std::vector<int>>& geneList);
+private:
+	int row;
+	int culomn;
 };
 #endif /* defined(__MyGA__Evaluation__) */

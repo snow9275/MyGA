@@ -1,4 +1,4 @@
-//
+﻿//
 //  Evaluation.cpp
 //  MyGA
 //
@@ -8,10 +8,11 @@
 
 #include "Evaluation.h"
 Evaluation::Evaluation(){
-    
-    
 }
-
+Evaluation::Evaluation(const int row, const int column) {
+	this->row = row; 
+	this->culomn = column;
+}
 //  Copyright (c) 2015年 Akitaka Moriyama. All rights reserved.
 //
 
@@ -22,6 +23,8 @@ void Evaluation::evaluate(const int (&labyrinth)[5][5], std::vector<std::vector<
     int x;
     int y;
     int bannedStep;
+	evaluateList.clear();
+
     for(int i = 0; i < geneList.size(); ++i){
         
         result = 0;
@@ -54,5 +57,18 @@ void Evaluation::evaluate(const int (&labyrinth)[5][5], std::vector<std::vector<
         evaluateList.push_back(result);
     }
     
-    
+
+}
+
+void Evaluation::printLabyrinthOfIndex(int index, const int(&labyrinth)[5][5], std::vector<std::vector<int>>& geneList) {
+
+	for (int i = 0; i < culomn; ++i) {
+		for (int j = 0; j < row; ++j) {
+
+
+
+		}
+
+	}
+
 }
